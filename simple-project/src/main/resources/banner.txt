@@ -1,0 +1,8 @@
+----------startup-banner------------
+------------------------------------
+spring-boot.version:${spring-boot.version:}
+user.name:${user.name}
+file.encoding:${file.encoding}
+------------------------------------
+------------------------------------
+
