@@ -1,3 +1,4 @@
+
 logging:
   level:
     root: info
@@ -29,10 +30,30 @@ spring:
       pool:
         max-size: 10
         queue-capacity: 10
+  data:
+    redis:
+#      database:
+#      host:
+#      port:
+#      password:
+#      ssl:
+#      timeout: 3s
+#      connectTimeout: 3s
+#      clientName:
+#      cluster:
+#        nodes: 127.0.0.1:7000,127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004,127.0.0.1:7005
+#        max-redirects: 3
+
+#      sentinel:
+#        master:
+#        nodes:
+  redis:
+    redisson:
+      file: classpath:redisson.yaml
 
 base64:
   decryption:
     enable: true
 
-
-
+server:
+  port: 18080
